@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work Hours Tracker</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
+<html>
+  <head>
+    <title>Work Hours Tracker</title>
+  </head>
+  <body>
+    <h1>Work Hours</h1>
+    <button id="authorize_button">Sign in with Google</button>
 
+    <form id="hoursForm">
+      <label>Date: <input type="date" name="date" required /></label><br />
+      <label>Clock In: <input type="time" name="clockIn" required /></label><br />
+      <label>Clock Out: <input type="time" name="clockOut" required /></label><br />
+      <button type="submit">Save Entry</button>
+    </form>
 
-<body>
-  <h1>Work Hours</h1>
-
-
-  <button onclick="handleAuthClick()">Sign in with Google</button>
-
-  
-  <form id="hoursForm">
-    <label>Date: <input type="date" name="date" required></label><br>
-    <label>Clock In: <input type="time" name="clockIn" required></label><br>
-    <label>Clock Out: <input type="time" name="clockOut" required></label><br>
-    <button type="submit">Save Entry</button>
-
-
-  </form>
-
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script src="app.js"></script>
-</body>
+    <!-- Load GAPI library FIRST -->
+    <script src="https://apis.google.com/js/api.js" onload="handleClientLoad()"></script>
+    <!-- Load your app script AFTER gapi is available -->
+    <script src="app.js"></script>
+  </body>
 </html>
