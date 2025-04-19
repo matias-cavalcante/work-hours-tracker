@@ -6,7 +6,7 @@ const RANGE = "Sheet1!A:D";
 
 let tokenClient;
 let gapiInited = false;
-let gisInited = false;
+let tokenGranted = false;
 
 function gapiLoaded() {
   gapi.load("client", async () => {
@@ -39,6 +39,7 @@ window.onload = () => {
         access_token: tokenResponse.access_token,
       });
 
+      tokenGranted = true;
       maybeEnableForm();
     },
   });
@@ -49,8 +50,9 @@ window.onload = () => {
 };
 
 function maybeEnableForm() {
-  if (gapiInited && gapi.client.getToken()) {
+  if (gapiInited && tokenGranted) {
     document.getElementById("hoursForm").style.display = "block";
+    document.getElementById("authorize_button").style.display = "none";
   }
 }
 
