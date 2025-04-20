@@ -65,8 +65,6 @@
   }
   
   form label {
-    display: block;
-    margin-bottom: 0.25rem;
     font-weight: 600;
     color: #6200ea;
   }
