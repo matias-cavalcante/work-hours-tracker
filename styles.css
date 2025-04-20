@@ -8,9 +8,9 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #e4e1ee;
+    background-color: #c5bde0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
