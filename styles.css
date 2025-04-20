@@ -3,7 +3,6 @@
   body {
     font-family: 'Inter', sans-serif;
     color: #2c2c2c;
-    background-color: red;
   }
 
   body {
@@ -14,6 +13,7 @@
     justify-content: center;
     min-height: 100vh;
     align-items: center;
+    flex-direction: column;
   }
   
   .container {
