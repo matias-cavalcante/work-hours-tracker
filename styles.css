@@ -8,9 +8,9 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #c5bde0;
+    background-color: #180c3d;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 100vh;
     align-items: center;
     flex-direction: column;
@@ -65,7 +65,8 @@
   }
   
   form label {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font-weight: 600;
     color: #6200ea;
   }
