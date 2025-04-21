@@ -2,14 +2,16 @@ body{
     background-color: #191825;
     display: flex;
     justify-content: center;
+    font-family: Roboto;
 }
 
 #welcome-page{
     background-color: white;
     width: 33.3%;
+    height: 90vh;
 }
 
-#authorize-button{
+#authorize_button{
     background-color: #6c44e3;
     color: white;
     font-size: 2em;
