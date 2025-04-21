@@ -1,7 +1,11 @@
-body{
-    background-color: #191825;
+body, #welcome-page{
     display: flex;
     justify-content: center;
+}
+
+body{
+    background-color: #191825;
+    margin: 0px,
     font-family: Roboto;
 }
 
@@ -9,12 +13,14 @@ body{
     background-color: white;
     width: 33.3%;
     height: 90vh;
+
+    border-radius: 15px;
 }
 
 #authorize_button{
     background-color: #6c44e3;
     color: white;
-    font-size: 2em;
-    border-radius: 2%;
+    font-size: 1.5em;
+    border-radius: 10px%;
 }
   
