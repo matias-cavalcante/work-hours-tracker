@@ -13,10 +13,9 @@
         margin: 0;
         font-family: Roboto;
         font-size: 1rem;
-
-        background: linear-gradient(-45deg, #191825, #2d2850, #532dc4, #291ba7);
-        background-size: 300% 300%;
-        animation: gradientBG 20s ease-in-out infinite;
+        background: linear-gradient(-45deg, #1a1a2e, #16213e, #6c44e3, #7f5af0);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
     }
   
   /* Welcome Page Container */
@@ -38,11 +37,13 @@
   #authorize_button {
     min-width: 500px;
     min-height: 180px;
-    background-color: #b99b31;
+    background-color: #ca7821;
+    padding-left: 30px;
+    padding-right: 30px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
     color: white;
     font-size: 3em;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -51,7 +52,6 @@
     background-color: #5936c8; /* Optional hover effect */
   }
   
-
 
 
 
