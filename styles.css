@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+  }
+  
+html, body {
+    height: 100%;
+  }
+  
  /* BODY */
 
  body {
@@ -20,6 +28,10 @@
       animation: gradientBG 40s linear infinite;
 }
 
+body {
+    overflow: hidden;
+  }
+
 /* General Layout Styles */
 #welcome-page {
     width: 100%;
@@ -34,8 +46,8 @@
   
   /* Welcome Page Heading */
   #welcome-page h1 {
-    font-size: 3.8em; /* 70px */
-    font-weight: 500;
+    font-size: 4em; /* 70px */
+    font-weight: 700;
     letter-spacing: 0.09em;
 
     color:white
@@ -52,10 +64,10 @@
     border: none;
     border-radius: 95px;
 
-    font-size: 2.3em;
+    font-size: 1.8em;
     font-weight: 500;
 
-    background-color: #d62e82;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
+    background-color: red;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
     color: white;
     
     transition: background-color 0.3s ease;
