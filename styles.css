@@ -27,23 +27,26 @@
   
   /* Welcome Page Heading */
   #welcome-page h1 {
-    font-size: 4.375rem; /* 70px */
-    font-weight: 600;
-    margin: 0; /* Optional: ensures no browser default spacing */
+    font-size: 3.8em; /* 70px */
+    font-weight: 500;
+    letter-spacing: 0.09em;
+  /* Optional: ensures no browser default spacing */
+ 
     color:white
   }
   
   /* Google Sign-In Button */
   #authorize_button {
-    min-width: 500px;
+    min-width: 550px;
     min-height: 180px;
     background-color: #ca7821;
     padding-left: 30px;
     padding-right: 30px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ;
     color: white;
-    font-size: 3em;
+    font-size: 2.3em;
+    font-weight: 500;
     border: none;
-    border-radius: 30px;
+    border-radius: 95px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
