@@ -2,7 +2,6 @@
  /* BODY */
  html, body {
     height: -webkit-fill-available;
-    overflow-y: hidden;
   }
   
 
@@ -63,7 +62,7 @@
     font-weight: 500;
 
     /*background-color: rgb(211, 49, 111);*/
-    background-color: rgb(37, 196, 207)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
+    background-color: rgb(160, 39, 132)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
     color: white;
     
     cursor: pointer;
