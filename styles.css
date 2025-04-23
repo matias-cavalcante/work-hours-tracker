@@ -3,6 +3,10 @@
     box-sizing: border-box;
  }
 
+ ::-webkit-scrollbar {
+    display: none;
+  }
+
  html {
     height: -webkit-fill-available;
   }
@@ -74,7 +78,7 @@
   }
   
   #authorize_button:hover {
-    background-color: #5936c8; /* Optional hover effect */
+    background-color: #4ab3d9; /* Optional hover effect */
   }
   
   @keyframes gradientBG {
