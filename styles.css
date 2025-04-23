@@ -44,6 +44,11 @@ html, body {
   
   /* Welcome Page Heading */
   #welcome-page h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+
+
     font-size: 4.1em; /* 70px */
     font-weight: 800;
     letter-spacing: 0.08em;
