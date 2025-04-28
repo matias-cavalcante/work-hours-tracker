@@ -1,0 +1,152 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* BODY */
+  body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* CONTAINER */
+  .dashboard-container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* GRID */
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: min-content;
+    gap: 24px;
+    width: 100%;
+    margin: auto 0;
+  }
+  
+  /* WIDGET */
+  .widget {
+    background: linear-gradient(135deg, rgba(18, 220, 190, 0.116), rgba(41, 201, 68, 0.034));
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+  
+    color: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* PLACEMENT */
+  .date {
+    grid-column: 1 / 6;
+  }
+  
+  .clock {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    height: 150px;
+    position: relative;
+    padding: 0;
+  }
+  
+  .weather {
+    grid-column: 4 / 6;
+    grid-row: 2;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+  }
+  
+  .total-hours {
+    grid-column: 1 / 6;
+    grid-row: 3;
+    height: 80px;
+  }
+  
+  .status {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    height: 80px;
+  
+    background: linear-gradient(135deg, rgba(222, 18, 4, 0.228), rgba(218, 12, 9, 0.132));
+    box-shadow: 0 0 15px rgba(222, 18, 4, 0.2); /* Soft blue glow */
+  }
+  
+  .check-in-out {
+    grid-column: 3 / 6;
+    grid-row: 4;
+    font-size: 1.1em;
+    padding: 0;
+    visibility: hidden;
+  }
+  
+  #check-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 80%;
+    height: 50%;
+    padding: 30px;
+  
+    border: none;
+    border-radius: 50px;
+
+    font-size: 1em;
+  
+    color: white;
+  
+    visibility: visible;
+    background-color: rgb(14, 148, 14);
+  }
+  
+  /* CLOCK INNER */
+  .clock-circle {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #94a3b8;
+    stroke-width: 2;
+  }
+  
+  .dot {
+    fill: #38bdf8;
+    transition: transform 0.3s linear;
+  }
+  
+  .clock-time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  

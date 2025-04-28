@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Dashboard Widgets</title>
+ <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+ <div class="dashboard-container">
+  <div class="dashboard-grid">
+   <div class="widget date" id = "date-widget">Wednesday 18 of April</div>
+
+
+   <div class="widget clock">
+    <svg viewBox="0 0 120 120" class="clock-circle">
+     <circle cx="60" cy="60" r="50" class="circle-bg"/>
+     <circle cx="60" cy="60" r="3" class="dot" id="movingDot"/>
+    </svg>
+    <div class="clock-time" id="digitalClock">--:--</div>
+   </div>
+
+
+   <div class="widget weather">
+   </div>
+
+
+   <div class="widget total-hours">Hours worked this month: 108</div>
+   <div class="widget status">Off shift</div>
+   <div class="widget check-in-out">
+    <button id = "check-button">
+     CHECK IN
+    </button>
+   </div>
+
+
+  </div>
+ </div>
+ <script src="js/dashboard.js" defer></script>
+</body>
+</html>
