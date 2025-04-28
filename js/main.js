@@ -45,7 +45,7 @@ window.onload = () => {
       localStorage.setItem("isLoggedIn", "true");
 
       // ✅ Redirect to dashboard
-      window.location.href = "../dashboard.html";
+      window.location.href = "dashboard.html";
     },
   });
 
