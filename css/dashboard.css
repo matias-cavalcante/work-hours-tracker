@@ -38,7 +38,7 @@
   
   /* WIDGET */
   .widget {
-    background: linear-gradient(135deg, rgba(18, 220, 190, 0.116), rgba(41, 201, 68, 0.034));
+    background: linear-gradient(135deg, rgba(64, 59, 143, 0.393), rgba(41, 201, 68, 0.16));
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10px);
   
@@ -91,7 +91,7 @@
     grid-row: 4;
     height: 80px;
   
-    background: linear-gradient(135deg, rgba(247, 34, 19, 0.155), rgba(218, 12, 9, 0.132));
+    background: linear-gradient(135deg, rgba(80, 72, 71, 0.272), rgba(83, 68, 67, 0.217));
   }
   
   .check-in-out {
@@ -122,11 +122,11 @@
     
     background: linear-gradient(
     145deg,
-    rgba(18, 218, 18, 1) 0%,
-    rgba(14, 148, 14, 1) 50%,
-    rgb(5, 106, 5) 100%);
+    rgb(18, 146, 18) 0%,
+    rgb(49, 164, 49) 50%,
+    rgb(100, 186, 100) 100%);
 
-    box-shadow: 1px 0 2px 4px rgba(39, 95, 39, 0.071);
+    box-shadow: 1px 0 2px 4px rgba(39, 95, 39, 0.116);
 
   }
   
@@ -198,7 +198,7 @@
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    background: linear-gradient(135deg, #6e1042, #080808, #030322);
+    background: linear-gradient(135deg, #f969ed, #ae6eac, #030322);
     background-size: 400% 400%;
     animation: gradientFlow 20s ease infinite;
   }
@@ -213,6 +213,10 @@
     animation: floatUp 25s infinite;
     opacity: 0.4;
   }
+
+
+
+  
   
   .bubble:nth-child(1) {
     left: 20%;

@@ -1,6 +1,6 @@
-if (localStorage.getItem("isLoggedIn") !== "true") {
-  window.location.href = "../index.html"; // send them back to login if not logged in
-}
+//if (localStorage.getItem("isLoggedIn") !== "true") {
+//  window.location.href = "../index.html"; // send them back to login if not logged in
+//}
 
 const apiKey = "96028edf5c98fa122c4985559bde10c1"; // replace with your actual key
 const city = "Reykjavik"; // or any city you want
@@ -65,3 +65,25 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(updateClock, 1000);
   updateClock();
 });
+
+function updateShiftStatus() {
+  const now = new Date();
+  const day = now.getDay(); // Sunday = 0, Monday = 1, ..., Saturday = 6
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+  const time = hours + minutes / 60; // Convert to decimal
+
+  const statusEl = document.querySelector(".status");
+
+  if (day >= 1 && day <= 5 && time >= 10.5 && time < 18.5) {
+    statusEl.textContent = "on shift";
+  } else {
+    statusEl.textContent = "off shift";
+  }
+}
+
+// Initial check
+updateShiftStatus();
+
+// Optional: keep checking every minute
+setInterval(updateShiftStatus, 60 * 1000);
