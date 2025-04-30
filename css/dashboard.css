@@ -40,7 +40,7 @@
   .widget {
     /*background: linear-gradient(135deg, rgba(64, 59, 143, 0.393), rgba(41, 201, 68, 0.16));*/
     background-image: linear-gradient(to bottom, #2b0c36, #3d124d);
-    opacity: 0.6;
+    opacity: 0.8;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10px);
   
@@ -93,7 +93,7 @@
     grid-row: 4;
     height: 80px;
   
-    background: linear-gradient(110deg, rgba(113, 56, 49, 0.459), rgba(145, 46, 39, 0.313));
+    background: linear-gradient(115deg, rgba(210, 32, 32, 0.774), rgba(61, 13, 13, 0.737));
   }
   
   .check-in-out {
@@ -126,9 +126,9 @@
     145deg,
     rgb(18, 146, 18) 0%,
     rgb(49, 164, 49) 50%,
-    rgb(100, 186, 100) 100%);
+    rgb(78, 182, 78) 100%);
 
-    box-shadow: 1px 0 2px 4px rgba(39, 95, 39, 0.116);
+    box-shadow: 1px 0 2px 4px rgba(2, 76, 2, 0.216);
 
   }
   
@@ -200,7 +200,7 @@
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    background-color: #0b0a0a;
+    background-color: #e4eaaa;
     background-size: 400% 400%;
     animation: gradientFlow 20s ease infinite;
   }
