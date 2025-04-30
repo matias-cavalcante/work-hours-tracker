@@ -76,14 +76,20 @@ function updateShiftStatus() {
   const statusEl = document.querySelector(".status");
 
   if (day >= 1 && day <= 5 && time >= 10.5 && time < 18.5) {
-    statusEl.textContent = "on shift";
+    statusEl.textContent = "On Shift";
+    statusEl.style.background =
+      "linear-gradient(135deg, rgba(0, 200, 83, 0.3), rgba(76, 175, 80, 0.2))";
+    statusEl.style.boxShadow = "0 0 15px rgba(0, 200, 83, 0.4)";
   } else {
-    statusEl.textContent = "off shift";
+    statusEl.textContent = "Off Shift";
+    statusEl.style.background =
+      "linear-gradient(135deg, rgba(222, 18, 4, 0.228), rgba(218, 12, 9, 0.132))";
+    statusEl.style.boxShadow = "0 0 15px rgba(222, 18, 4, 0.2)";
   }
 }
 
-// Initial check
+// Initial call
 updateShiftStatus();
 
-// Optional: keep checking every minute
-setInterval(updateShiftStatus, 60 * 1000);
+// Update every minute
+setInterval(updateShiftStatus, 60000);

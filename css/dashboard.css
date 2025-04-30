@@ -38,7 +38,9 @@
   
   /* WIDGET */
   .widget {
-    background: linear-gradient(135deg, rgba(64, 59, 143, 0.393), rgba(41, 201, 68, 0.16));
+    /*background: linear-gradient(135deg, rgba(64, 59, 143, 0.393), rgba(41, 201, 68, 0.16));*/
+    background-image: linear-gradient(to bottom, #2b0c36, #3d124d);
+    opacity: 0.6;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10px);
   
@@ -91,7 +93,7 @@
     grid-row: 4;
     height: 80px;
   
-    background: linear-gradient(135deg, rgba(80, 72, 71, 0.272), rgba(83, 68, 67, 0.217));
+    background: linear-gradient(110deg, rgba(113, 56, 49, 0.459), rgba(145, 46, 39, 0.313));
   }
   
   .check-in-out {
@@ -198,7 +200,7 @@
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    background: linear-gradient(135deg, #f969ed, #ae6eac, #030322);
+    background-color: #0b0a0a;
     background-size: 400% 400%;
     animation: gradientFlow 20s ease infinite;
   }
@@ -206,8 +208,8 @@
   .bubble {
     position: absolute;
     bottom: -100px;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: rgba(21, 133, 147, 0.685);
     border-radius: 50%;
     animation: floatUp 25s infinite;
