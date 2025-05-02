@@ -33,7 +33,8 @@ const options = { weekday: "long", day: "numeric", month: "long" };
 const today = new Date().toLocaleDateString("en-US", options);
 
 // Capitalize first letter (to match the style you had)
-const formattedDate = today.charAt(0).toUpperCase() + today.slice(1);
+//const formattedDate = today.charAt(0).toUpperCase() + today.slice(1);
+const formattedDate = today.toUpperCase();
 
 dateWidget.textContent = formattedDate;
 
