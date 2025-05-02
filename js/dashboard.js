@@ -66,6 +66,24 @@ document.addEventListener("DOMContentLoaded", () => {
   updateClock();
 });
 
+const dummyWeeklyHours = {
+  Mon: 6,
+  Tue: 9,
+  Wed: 7,
+  Thu: 4,
+  Fri: 8,
+  Sat: 2,
+  Sun: 0,
+};
+
+const maxHours = 10; // adjust based on realistic upper bound
+
+document.querySelectorAll(".bar").forEach((bar) => {
+  const day = bar.getAttribute("data-day");
+  const height = (dummyWeeklyHours[day] / maxHours) * 100;
+  bar.style.setProperty("--height", `${height}%`);
+});
+
 function updateShiftStatus() {
   const now = new Date();
   const day = now.getDay(); // Sunday = 0, Monday = 1, ..., Saturday = 6
