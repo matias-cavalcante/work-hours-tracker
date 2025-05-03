@@ -16,8 +16,8 @@ fetch(
 
     document.querySelector(".weather").innerHTML = `
       <div style="text-align: center;">
-          <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" style="width: 60px; height: 60px;" />
-        <p style="font-size: 1.1rem;">${city}</p>
+          <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" style="width: 70px; height: 60px;" />
+        <p style="font-size: 1.7rem; font-weight: 400;">${city}</p>
         <p>${Math.round(temp)}°C - ${desc}</p>
       </div>
     `;
@@ -95,15 +95,10 @@ function updateShiftStatus() {
   const statusEl = document.querySelector(".status");
 
   if (day >= 1 && day <= 5 && time >= 10.5 && time < 18.5) {
-    statusEl.textContent = "On Shift";
-    statusEl.style.background =
-      "linear-gradient(135deg, rgba(0, 200, 83, 0.3), rgba(76, 175, 80, 0.2))";
-    statusEl.style.boxShadow = "0 0 15px rgba(0, 200, 83, 0.4)";
+    statusEl.textContent = "ON SHIFT";
   } else {
-    statusEl.textContent = "Off Shift";
-    statusEl.style.background =
-      "linear-gradient(135deg, rgba(222, 18, 4, 0.228), rgba(218, 12, 9, 0.132))";
-    statusEl.style.boxShadow = "0 0 15px rgba(222, 18, 4, 0.2)";
+    statusEl.textContent = "OFF SHIFT";
+    statusEl.style.color = "rgb(154, 149, 149)";
   }
 }
 
