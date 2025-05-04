@@ -16,8 +16,8 @@ fetch(
 
     document.querySelector(".weather").innerHTML = `
       <div style="text-align: center;">
-          <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" style="width: 70px; height: 60px;" />
-        <p style="font-size: 1.7rem; font-weight: 400;">${city}</p>
+          <img src="http://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" style="width: 70px; height: 50px;" />
+        <p style="font-size: 1.8rem; font-weight: 400;">${city}</p>
         <p>${Math.round(temp)}°C - ${desc}</p>
       </div>
     `;

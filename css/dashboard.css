@@ -46,13 +46,15 @@
   
   /* WIDGET */
   .widget {
-    background: rgba(255, 255, 255, 0.119);
+    /*background: rgba(255, 255, 255, 0.119);*/
+    background: rgba(59, 8, 91, 0.438);
+
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10px);
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 30px rgba(31, 30, 30, 0.4), 0 0 10px rgba(108, 91, 123, 0.3);
+    box-shadow: 0 4px 30px rgba(31, 30, 30, 0.4), 0 0 10px rgba(67, 49, 82, 0.3);
   
     color: #f8fafc;
     border-radius: 12px;
@@ -91,12 +93,14 @@
   }
 
   .weather p{
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
 
   .weekly-hours-widget {
-    background: rgba(255, 255, 255, 0.04);
+    /*background: rgba(255, 255, 255, 0.04);*/
+    background: rgba(59, 8, 91, 0.438);
+
     border-radius: 12px;
     min-height: 160px;
     padding: 0;
@@ -137,7 +141,7 @@
     justify-content: space-between;
     align-items: flex-end;
     height: 80px;
-    min-width: 200px;
+    min-width: 260px;
   }
   
   .bar {
@@ -164,6 +168,7 @@
   
   .weekly-summary-hours-widget {
     grid-column: 1 / 6; /* Span all 5 columns */
+    background-color: red;
   }
 
 
